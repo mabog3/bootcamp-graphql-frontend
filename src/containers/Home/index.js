@@ -38,10 +38,10 @@ const Home = () => {
 
   return (
     <>
-      <button type='button' onClick={add_auth}>Add Author</button>
+      <button onClick={add_auth}>Add Author</button>
       {d.auth_list.map(author => (
         <p>
-          {' '}{author.firstName}{' '}{author.lastName}
+          {author.lastName}, {author.firstName}
         </p>
       ))}
     </>
